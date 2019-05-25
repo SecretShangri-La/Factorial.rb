@@ -3,19 +3,20 @@
 def factorial(num);
 
     if num == 0 then
-       puts(1);
+      puts(1);
     end
 
     n = num -1;
     m = num;
-    ftl = [1];
+    ftl = [0];
 
     while m >= 2 do
       ftl << n * m;
       n -= 2;
       m -= 2;
     end
-    print("#{ftl.inject(:*)}\n");
+    memory = ftl.inject(:*); 
+    print("#{memory}\n") if memory > 0
 end
 
 tmp = ARGV[0]
