@@ -8,7 +8,7 @@ def factorial(num);
 
     n = num -1;
     m = num;
-    ftl = [0];
+    ftl = [];
 
     while m >= 2 do
       ftl << n * m;
