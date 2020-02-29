@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 def factorial(num);
-
     if num == 0 then
       puts(1);
     end
